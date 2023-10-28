@@ -1,0 +1,41 @@
+.about__container{
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    column-gap: 4rem;
+}
+.about__img{
+    width: 350px;
+    border-radius: 1.5rem;
+    justify-self: center;
+}
+
+.about__description{
+    margin-bottom: 15px;
+}
+
+@media screen and (max-width: 992px) {
+    .about__container{
+        grid-template-columns: 1fr;
+        row-gap: 2.5rem;
+    }
+    .about__img{
+        width: 220px;
+    }
+
+    .about__data{
+        text-align: center;
+        align-items: center;
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+
+    .about__title, .about__description{
+        justify-content: center;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+  }
+
+  @media screen and (max-width: 350px) {
+  }
