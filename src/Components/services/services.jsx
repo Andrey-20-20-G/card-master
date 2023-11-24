@@ -104,6 +104,49 @@ const Services = () => {
               </div>
             </div>
           </div>
+
+          <div className="services__content">
+            <div>
+              <i className="uil uil-web-grid services__icon"></i>
+              <h3 className="services__title">
+              Интеллектуальный <br /> ассистент методиста
+              </h3>
+            </div>
+
+            <span className="services__button" onClick={() => toggleTab(1)}>
+              View More
+              <i className="uil uil-arrow-right services__button-icon"></i>
+            </span>
+
+            <div>
+              <div
+                className={
+                  toggleState === 1
+                    ? "services__modal1 active__modal"
+                    : "services__modal"
+                }
+              >
+                <div className="services__modal-content">
+                  <i
+                    onClick={() => toggleTab(0)}
+                    className="uil uil-times services__modal-close"
+                  ></i>
+                  <h3 className="services__modal-title">HR-бот</h3>
+                  <p className="services__modal-description">
+                    Веб сервис, предоставляющий краткие выжимки с глоссарием методистам  
+                  </p>
+                  <p className="services__modal-description">
+                    <QRCode
+                      className="services__qr"
+                      value="https://web.telegram.org/a/#6538637679"
+                      viewBox={`0 0 256 256`}
+                    />
+                  </p>
+                  <p className="services__modal-description">QR-code</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </div>

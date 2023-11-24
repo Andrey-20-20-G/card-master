@@ -4,7 +4,7 @@ const Data = () => {
   return (
     <div className="home__data">
       <h1 className="home__title">
-        Enigma AI
+        Красивое название
         <svg
           width="36"
           height="36"
@@ -58,7 +58,7 @@ const Data = () => {
 
       <h3 className="home__subtitle">IT-DEV</h3>
       <p className="home__description">
-        Мы команда Enigma AI, занимающаяся разработкой сервисов с использованием
+        Мы команда Красивое название, занимающаяся разработкой сервисов с использованием
         ИИ
       </p>
 
