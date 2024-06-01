@@ -16,9 +16,10 @@ const Services = () => {
         <span className="section__subtitle">Info about project</span>
 
         <div className="services__container container grid">
+
           <div className="services__content">
             <div>
-              <i className="uil uil-web-grid services__icon"></i>
+              <i className="uil uil-edit services__icon"></i>
               <h3 className="services__title">
                 HR-бот <br /> LLM
               </h3>
@@ -29,33 +30,31 @@ const Services = () => {
               <i className="uil uil-arrow-right services__button-icon"></i>
             </span>
 
-            <div>
-              <div
-                className={
-                  toggleState === 1
-                    ? "services__modal1 active__modal"
-                    : "services__modal"
-                }
-              >
-                <div className="services__modal-content">
-                  <i
-                    onClick={() => toggleTab(0)}
-                    className="uil uil-times services__modal-close"
-                  ></i>
-                  <h3 className="services__modal-title">HR-бот</h3>
-                  <p className="services__modal-description">
-                    Чат-бот telegram для HR, использующий LLM для упрощения
+            <div
+              className={
+                toggleState === 1
+                  ? "services__modal1 active__modal"
+                  : "services__modal"
+              }
+            >
+              <div className="services__modal-content">
+                <i
+                  onClick={() => toggleTab(0)}
+                  className="uil uil-times services__modal-close"
+                ></i>
+                <h3 className="services__modal-title">HR-бот</h3>
+                <p className="services__modal-description">
+                Чат-бот telegram для HR, использующий LLM для упрощения
                     взаимодействия с сотрудниками компании Smart Consulting
-                  </p>
-                  <p className="services__modal-description">
-                    <QRCode
-                      className="services__qr"
-                      value="https://web.telegram.org/a/#6538637679"
-                      viewBox={`0 0 256 256`}
-                    />
-                  </p>
-                  <p className="services__modal-description">QR-code</p>
-                </div>
+                </p>
+                <p className="services__modal-description">
+                  <QRCode
+                    className="services__qr"
+                    value="https://t.me/AI_Accreditation_Bot"
+                    viewBox={`0 0 256 256`}
+                  />
+                </p>
+                <p className="services__modal-description">QR-code</p>
               </div>
             </div>
           </div>
@@ -109,11 +108,11 @@ const Services = () => {
             <div>
               <i className="uil uil-web-grid services__icon"></i>
               <h3 className="services__title">
-              Интеллектуальный <br /> ассистент методиста
+                Интеллектуальный <br /> ассистент методиста
               </h3>
             </div>
 
-            <span className="services__button" onClick={() => toggleTab(1)}>
+            <span className="services__button" onClick={() => toggleTab(3)}>
               View More
               <i className="uil uil-arrow-right services__button-icon"></i>
             </span>
@@ -121,7 +120,7 @@ const Services = () => {
             <div>
               <div
                 className={
-                  toggleState === 1
+                  toggleState === 3
                     ? "services__modal1 active__modal"
                     : "services__modal"
                 }
@@ -131,9 +130,10 @@ const Services = () => {
                     onClick={() => toggleTab(0)}
                     className="uil uil-times services__modal-close"
                   ></i>
-                  <h3 className="services__modal-title">HR-бот</h3>
+                  <h3 className="services__modal-title">Ассистент методиста</h3>
                   <p className="services__modal-description">
-                    Веб сервис, предоставляющий краткие выжимки с глоссарием методистам  
+                    Веб сервис, предоставляющий методистам краткие выжимки
+                    лекции с глоссарием, для дальнейшего использования
                   </p>
                   <p className="services__modal-description">
                     <QRCode

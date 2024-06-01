@@ -7,7 +7,7 @@ const Header = () => {
     <header className="header">
       <nav className="nav container">
         <a href="index.html" className="nav__logo">
-          Красивое название
+          Надеюсь менеджер не видит :)
         </a>
         <div className={Toggle ? "nav__menu show-menu" : "nav__menu"}>
           <ul className="nav__list grid">
@@ -29,6 +29,13 @@ const Header = () => {
               <a href="#services" className="nav__link">
                 <i className="uil uil-briefcase-alt nav__icon"></i>
                 Services
+              </a>
+            </li>
+
+            <li className="nav__item">
+              <a href="#solution" className="nav__link">
+                <i className="uil uil-brain nav__icon"></i>
+                Solution
               </a>
             </li>
 
