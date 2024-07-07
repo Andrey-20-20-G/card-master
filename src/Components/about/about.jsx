@@ -3,7 +3,7 @@ import "./about.css";
 import "../header/header.css";
 import AboutImg1 from "../../assets/Andre.jpg";
 import AboutImg2 from "../../assets/Roman.jpg";
-import AboutImg3 from "../../assets/Maksim.jpg";
+import AboutImg3 from "../../assets/about4.jpg";
 
 const About = () => {
   return (
