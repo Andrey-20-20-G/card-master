@@ -4,7 +4,7 @@ const Data = () => {
   return (
     <div className="home__data">
       <h1 className="home__title">
-        Надеюсь менеджер не видит :)
+      AI.FORCES
         <svg
           width="36"
           height="36"
@@ -58,7 +58,7 @@ const Data = () => {
 
       <h3 className="home__subtitle">IT-DEV</h3>
       <p className="home__description">
-        Мы - команда <strong>Надеюсь менеджер не видит :)</strong>, занимающаяся
+        Мы - команда <strong>AI.FORCES</strong>, занимающаяся
         разработкой сервисов с использованием ИИ
       </p>
 
